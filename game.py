@@ -3,10 +3,10 @@ from tkinter import messagebox
 from random import randint
 
 
-class JogoNumeroSecreto:
+class AdivinheONumero:
     def __init__(self, root):
         self.root = root
-        self.root.title("Jogo de Adivinhar")
+        self.root.title("Adivinhe o número")
         self.root.geometry("400x300")
         self.root.resizable(False, False)
 
@@ -35,7 +35,7 @@ class JogoNumeroSecreto:
 
         titulo = tk.Label(
             self.frame_inicial,
-            text="Bem-vindo ao Jogo de Adivinhar!",
+            text="Bem vindo(a)",
             font=("Comic Sans MS", 18, "bold"),
             bg="#FFF2CC",
             fg="#FF5733"
@@ -62,7 +62,7 @@ class JogoNumeroSecreto:
 
         titulo = tk.Label(
             self.frame_dificuldade,
-            text="Escolha a Dificuldade",
+            text="Escolha a dificuldade",
             font=("Comic Sans MS", 14),
             bg="#D9EAD3",
             fg="#38761D"
@@ -171,5 +171,5 @@ class JogoNumeroSecreto:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = JogoNumeroSecreto(root)
+    app = AdivinheONumero(root)
     root.mainloop()
